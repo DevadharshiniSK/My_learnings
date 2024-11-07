@@ -6,8 +6,8 @@ const intersection = (a1, a2) => {
 
     for(let i = 0; i < a1.length; i++){
         for(let j = 0; j < a2.length; j++){
-            if(arr1[i] === arr2[j]){
-                finalArray.push(arr1[i])
+            if(a1[i] === a2[j]){
+                finalArray.push(a1[i])
             }
         }
     }

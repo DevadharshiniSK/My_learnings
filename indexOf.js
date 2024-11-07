@@ -2,7 +2,7 @@ const arr = [1,2,3,4,1,4,5,6,1];
 
 const indexOf = (array, num, index) => {
     for(let i = index; i < array.length ; i++){
-        if(arr[i] === num){
+        if(array[i] === num){
             return i
         }
     }

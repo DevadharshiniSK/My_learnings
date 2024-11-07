@@ -1,10 +1,10 @@
 let arr = [0, 1, 2, "", "Hello!", false, true, null, undefined];
 
-const getValues = (values) => {
+const getValues = (array) => {
     const newArr = [];
-    for(let i=0; i <= values.length; i++){
-        if(arr[i]){
-            newArr.push(arr[i])
+    for(let i=0; i <= array.length; i++){
+        if(array[i]){
+            newArr.push(array[i])
         }
     }
     return newArr

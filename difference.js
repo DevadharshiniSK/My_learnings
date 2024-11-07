@@ -8,13 +8,13 @@ const difference = (a1, a2) => {
         let found = false;
 
         for(let j=0; j<a2.length; j++){
-            if(arr1[i] === arr2[j]){
+            if(a1[i] === a2[j]){
                 found = true
                 break;
             }
         }
         if(!found){
-            diffArray.push(arr1[i])
+            diffArray.push(a1[i])
         }
     }
     return diffArray
