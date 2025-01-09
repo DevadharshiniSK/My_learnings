@@ -3,10 +3,7 @@ const flatten = (array) => {
 
     for(let i = 0; i < array.length; i++){
         if(Array.isArray(array[i])){
-            const flatSubArray = flatten(array[i]);
-            for (let j = 0; j < flatSubArray.length; j++) {
-                resultArr[resultArr.length] = flatSubArray[j];
-            }
+            resultArr = resultArr.concat(array[i])
         }
         else{
             resultArr[resultArr.length] = array[i]
