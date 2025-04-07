@@ -8,18 +8,20 @@ function findSecondLargestAndSmallest(arr){
 
     for(var i = 0; i < arr.length; i++){
         if(arr[i] < smallest){
+            secondSmallest = smallest;
             smallest = arr[i];
         }
-        if(arr[i] > largest){
-            largest = arr[i];
+        else if(arr[i] > smallest && arr[i] < secondSmallest){
+            secondSmallest = arr[i];
         }
     }
 
     for(var i = 0; i < arr.length; i++){
-        if(arr[i] > smallest && arr[i] < secondSmallest){
-            secondSmallest = arr[i];
+        if(arr[i] > largest){
+            secondLargest = largest;
+            largest = arr[i];
         }
-        if(arr[i] < largest && arr[i] > secondLargest){
+        else if(arr[i] < largest && arr[i] > secondLargest){
             secondLargest = arr[i];
         }
     }
